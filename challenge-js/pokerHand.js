@@ -107,7 +107,7 @@ class PokerHand {
 	        return this.isPairs();    
         } else if (this.isSuited() && this.isStraight() ){
 	     	 //If there is a straight flush with an Ace, it is a Royal Flush
-		 	return (this.hand.some(card => card.value = 'A')) ? 'Royal Flush' : 'Straight Flush';    
+		 	return (this.hand.some(card => card.value == '14')) ? 'Royal Flush' : 'Straight Flush';    
         } else if (this.isSuited()){
 	        return 'Flush';
         } else if (this.isStraight()){
