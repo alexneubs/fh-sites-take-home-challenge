@@ -38,7 +38,6 @@ describe('Rank Two Pair', function() {
  */
 describe('Rank A Flush', function() {
   var hand = new PokerHand('Kh Qh 6h 2h 9h');
-
   it('Return flush when hand given', function() {
     assert.equal(hand.getRank(), 'Flush');
   });

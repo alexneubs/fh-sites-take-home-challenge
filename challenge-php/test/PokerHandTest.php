@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 class PokerHandTest extends TestCase
 {
     /**
-     * @test
+     * @test Royal Flush
      */
     public function itCanRankARoyalFlush()
     {
@@ -15,7 +15,7 @@ class PokerHandTest extends TestCase
     }
 
     /**
-     * @test
+     * @test One Pair
      */
     public function itCanRankAPair()
     {
@@ -24,7 +24,7 @@ class PokerHandTest extends TestCase
     }
 
     /**
-     * @test
+     * @test Two Pair
      */
     public function itCanRankTwoPair()
     {
@@ -33,13 +33,13 @@ class PokerHandTest extends TestCase
     }
 
     /**
-     * @test
+     * @ Flush
      */
     public function itCanRankAFlush()
     {
         $hand = new PokerHand('Kh Qh 6h 2h 9h');
         $this->assertEquals('Flush', $hand->getRank());
     }
-
-    // TODO: More tests go here
+	
+    
 }

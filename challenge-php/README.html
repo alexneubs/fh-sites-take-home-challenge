@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<h2>PHP Take Home Challenge</h2>
+
+<h4 id="makesureyouareinthechallenge-phpdirectory.">Make sure you are in the <code>/challenge-php</code> directory.</h4>
+
+<p>This repository includes a <code>composer.json</code> file which will install PHPUnit. <a href="https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos">If you don&#8217;t have composer, you can find instructions on installing it here.</a> It also includes a default phpunit configuration. After running <code>composer install</code> you should be able to run:</p>
+
+<ul>
+<li><code>composer test-poker</code></li>
+</ul>
+
+<p>Please be sure all included unit tests are passing before you submit your solution.</p>
+
+<h1 id="pokerhandranker">Poker Hand Ranker</h1>
+
+<p>To run the provided tests, run <code>composer test-poker</code>.</p>
+
+<p>Write code that will take in a poker hand, evaluate it and determine its
+rank.</p>
+
+<p>Example:</p>
+
+<p>Hand: As Ks Qs Js 10s (Royal Flush)</p>
+
+<p>Hand: Ah As 10c 7d 6s (One Pair)</p>
+
+<p>Hand: Kh Kc 3s 3h 2d (Two Pair)</p>
+
+<p>Hand: Kh Qh 6h 2h 9h (Flush)</p>
+
+<p>It should handle the following hand ranks:</p>
+
+<ul>
+<li>Royal Flush</li>
+<li>Straight Flush</li>
+<li>Four of a Kind</li>
+<li>Full House</li>
+<li>Flush</li>
+<li>Straight</li>
+<li>Three of a Kind</li>
+<li>Two Pair</li>
+<li>One Pair</li>
+<li>High Card</li>
+</ul>
+
+</body>
+</html>
+

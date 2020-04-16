@@ -1,3 +1,4 @@
 vendor
 *.DS_Store
 /challenge-js/node_modules
+/challenge-php/src/PokerHand/PokerHand_debug.php
