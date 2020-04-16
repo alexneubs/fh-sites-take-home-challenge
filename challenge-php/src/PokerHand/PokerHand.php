@@ -42,6 +42,8 @@ class PokerHand
 		    	return "One Pair";
 		    case [1,2,2]:
 		    	return "Two Pair";
+		    case [1,1,3]:
+		    	return "Three of a Kind";	
 		    case [2,3]:
 		    	return "Full House";
 		    case [1,4]:
@@ -71,9 +73,7 @@ class PokerHand
     }
 
     public function getRank()
-    {
-        // TODO: Implement poker hand ranking
-        
+    {        
         if ($this->getPairs()){
 	        return $this->getPairs();
         }
